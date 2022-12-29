@@ -1,10 +1,14 @@
-import './App.css';
-import { Image } from "./components/Image"
+import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { VisualArt } from "./components/VisualArt";
+import { Footer } from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
-      <Image />
+      <Navbar />
+      <VisualArt />
+      <Footer />
     </div>
   );
 }

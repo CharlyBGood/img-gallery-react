@@ -1,4 +1,4 @@
-import "../stylesheets/Image.css";
+import "../stylesheets/VisualArt.css";
 
 export function Image(props) {
   const openImg = () => {
@@ -36,5 +36,3 @@ export function Image(props) {
     </>
   );
 }
-
-
