@@ -71,6 +71,10 @@
 
 .img-modal {
   display: none;
+}
+
+.img-modal-open {
+  display: flex;
   position: fixed;
   z-index: 1;
   left: 0;
