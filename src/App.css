@@ -21,16 +21,17 @@ body {
   font-size: var(--fs-400);
   font-family: "Nanum Gothic", sans-serif;
   color: var(--col-whr);
-  background-color: #0c0c0c;
+  background-color: rgba(14, 2, 26, 0.81);
   margin: 0;
   padding: 0;
   max-width: 100%;
-  height: auto;
+  /* height: 100vh; */
   font-weight: bolder;
+
 }
 
 .App {
-  background-color: rgba(14, 2, 26, 0.81);
+  /* background-color: rgba(14, 2, 26, 0.81); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

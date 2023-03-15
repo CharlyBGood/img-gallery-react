@@ -11,26 +11,8 @@ function VisualArt() {
         <Image src="https://media.giphy.com/media/cLP818k392JZpIFATT/giphy.gif" />
         <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
         <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
-        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
       </div>
-
+      <div className="buttons">
       <button>
         <a
           href="https://opensea.io/charly_bgood"
@@ -42,6 +24,19 @@ function VisualArt() {
           <i className="fa-solid fa-cannabis"></i>
         </a>
       </button>
+      <button>
+        <a
+          href="https://giphy.com/channel/charly-_bgood"
+          rel="noreferrer"
+          target="_BLANK"
+        >
+          <i className="fa-solid fa-cannabis"></i>
+          Giphy
+          <i className="fa-solid fa-cannabis"></i>
+        </a>
+      </button>
+      </div>
+
     </div>
   );
 }

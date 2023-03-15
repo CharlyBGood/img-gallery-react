@@ -1,56 +1,6 @@
-/* .main-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: center;
-  gap: 1em;
-} */
-
-/* .collage-h1 {
-  text-align: center;
-  margin: 1em auto;
-  margin-bottom: 0.5em;
-} */
-
-/* .gy-container { */
-/* margin: 0 auto; */
-/* display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 2em auto 2em auto;
-  grid-template-columns: repeat(auto-fit, minmax(21vw, 1fr));
-  -ms-flex-pack: distribute; */
-/* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
-  width: 85%;
-  justify-content: center; */
-/* } */
-
-/* .gy-item {
-  width: 13vw;
-  border: 1px solid var(--col-rd);
-  border-radius: 0.4em;
-  cursor: pointer;
-} */
-
-/* .gy-container .gy-img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.4em;
-} */
-
-/* try to see if can apply general element css just in this component */
-.App {
+/* .App {
   height: auto;
-}
+} */
 
 
 .main-gy-container {
@@ -96,6 +46,7 @@
   background-color: var(--col-rd);
   padding: 0.6em;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .main-gy-container button a {
@@ -146,9 +97,12 @@ img.modal-content {
 .main-gy-container {
     padding-bottom: 3em;
   }
+.gy-container {
+  width: 100%;
+}
+
 .gy-item {
     width: 25%;
   }
-/* img.modal-content {
-  } */
+
 }
