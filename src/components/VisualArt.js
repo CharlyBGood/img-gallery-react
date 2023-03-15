@@ -1,17 +1,34 @@
 import "../stylesheets/VisualArt.css";
 import { Image } from "../components/Image";
 
-export function VisualArt() {
+function VisualArt() {
   return (
-    <div className="main-container">
+    <div className="main-gy-container">
       <h1 className="collage-h1">cRaZy CollaGe World</h1>
       <div className="gy-container">
-        <Image title="jahjah" ext="gif" />
-        <Image title="corazono2" ext="gif" />
-        <Image title="colored" ext="png" />
-        <Image title="monstruo" ext="png" />
-        <Image title="damma1" ext="gif" />
-        <Image title="bitcoinfire" ext="gif" />
+        <Image src="https://media.giphy.com/media/vuDebpxeqF95dy4k7v/giphy.gif" />
+        <Image src="https://media1.giphy.com/media/exPvEKmXHb6dWiTgQv/giphy.gif" />
+        <Image src="https://media.giphy.com/media/cLP818k392JZpIFATT/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
+        <Image src="https://media.giphy.com/media/6V7gDOure95uLJkwAg/giphy.gif" />
+        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
+        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" />
       </div>
 
       <button>
@@ -28,3 +45,5 @@ export function VisualArt() {
     </div>
   );
 }
+
+export default VisualArt;

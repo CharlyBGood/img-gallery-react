@@ -1,26 +1,24 @@
 import { useState } from "react";
 import "../stylesheets/VisualArt.css";
 
-export function Image({ title, ext }) {
-  const [imageSrc, setImageSrc] = useState();
+export function Image({ src }) {
+  const [imageSrc, setImageSrc] = useState(null);
   const [isHidden, setIsHidden] = useState(true);
 
   const openImg = (e) => {
     setImageSrc(e.target.src);
     setIsHidden(!isHidden);
-    console.log(imageSrc);
   };
 
   const closeImg = (e) => {
     setIsHidden(!isHidden);
-    console.log("closeImg");
   };
   return (
     <>
-      <div className="gy-item gy-item-1" onClick={openImg}>
+      <div className="gy-item" onClick={openImg}>
         <img
           className="gy-img"
-          src={require(`../img/img-${title}.${ext}`)}
+          src={src}
           alt="digital art by Charly BGood"
         />
       </div>
@@ -30,7 +28,7 @@ export function Image({ title, ext }) {
       >
         <img
           className="modal-content"
-          src={require(`../img/img-${title}.${ext}`)}
+          src={imageSrc}
           alt="digital art by Charly BGood"
         />
       </div>
