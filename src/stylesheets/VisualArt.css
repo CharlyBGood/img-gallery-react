@@ -40,10 +40,23 @@
   height: 100%;
 }
 
+
+.carrousel-img {
+ width: 15rem;
+}
+
+.carrousel-img button {
+  background-color: transparent;
+}
+
+.carrousel-img button:hover {
+  background-color: var(--col-rd);
+}
+
 .main-gy-container button {
   text-align: center;
   margin: 1em auto;
-  background-color: var(--col-rd);
+  /* background-color: var(--col-rd); */
   padding: 0.6em;
   border-radius: 0.5em;
   cursor: pointer;
