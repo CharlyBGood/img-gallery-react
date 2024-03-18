@@ -1,51 +1,28 @@
 import "../stylesheets/VisualArt.css";
-import { Image } from "../components/Image";
-import first from "../img/1.gif";
-import second from "../img/2.png";
-import third from "../img/3.png";
-import fourth from "../img/4.gif";
+import React, { useState, useEffect } from 'react';
+import { Image } from '../components/Image';
+import { imgs } from "./db/imgDb";
 
 function VisualArt() {
-  const imgs = [first, second, third, fourth];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((currentIndex + 1) % imgs.length);
+      setNextIndex((nextIndex + 1) % imgs.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex, nextIndex]);
 
   return (
     <div className="main-gy-container">
       <h1 className="collage-h1">cRaZy CollaGe World</h1>
       <div className="gy-container">
-        <div>
-          {imgs.map((img, i) => (
-            <Image key={i} src={img} />
-          ))}
+        <div className="carousel">
+          <Image src={imgs[currentIndex]} className="current" />
+          <Image src={imgs[nextIndex]} className="next" />
         </div>
-
-        {/* <Image src="https://media1.giphy.com/media/exPvEKmXHb6dWiTgQv/giphy.gif" />
-        <Image src="https://media.giphy.com/media/cLP818k392JZpIFATT/giphy.gif" />
-        <Image src="https://media.giphy.com/media/RL0VClRYDycJtJtrnu/giphy.gif" />
-        <Image src="https://media.giphy.com/media/xXI7vCRLLviHeO41TF/giphy.gif" /> */}
-      </div>
-      <div className="buttons">
-        <button>
-          <a
-            href="https://opensea.io/charly_bgood"
-            rel="noreferrer"
-            target="_BLANK"
-          >
-            <i className="fa-solid fa-cannabis"></i>
-            NFTs
-            <i className="fa-solid fa-cannabis"></i>
-          </a>
-        </button>
-        <button>
-          <a
-            href="https://giphy.com/channel/charly-_bgood"
-            rel="noreferrer"
-            target="_BLANK"
-          >
-            <i className="fa-solid fa-cannabis"></i>
-            Giphy
-            <i className="fa-solid fa-cannabis"></i>
-          </a>
-        </button>
       </div>
     </div>
   );
