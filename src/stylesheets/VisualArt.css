@@ -1,0 +1,87 @@
+.collage-h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 85%;
+}
+
+.carousel {
+  position: relative;
+  height: auto;
+  width: 35%;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.carousel img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.carousel img.current {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 2em;
+  z-index: 2;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgba(206, 193, 193, 0.8);
+}
+
+.prev {
+  left: 30%;
+  opacity: .9;
+}
+
+.next {
+  right: 30%;
+}
+
+a {
+  margin: 0 auto;
+  padding: 0.3em;
+  text-decoration: none;
+  color: var(--col-whp);
+}
+
+a:hover {
+  color: #c41515;
+}
+
+@media screen and (max-width: 650px) {
+  .gy-container {
+    width: 100%;
+  }
+
+  .gy-item {
+    width: 25%;
+  }
+}
