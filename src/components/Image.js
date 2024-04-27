@@ -6,35 +6,38 @@ export function Image({ src, className }) {
   const [imageSrc, setImageSrc] = useState(null);
   const [isHidden, setIsHidden] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const imgLength = [...srcImgs];
 
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % srcImgs.length);
-    setIsHidden(isHidden);
-    console.log('isHidden')
+    setCurrentIndex((currentIndex + 1) % imgLength.length);
+    setIsHidden(!isHidden);
+    console.log(isHidden);
   };
 
-  const handlePrevious = () => {
+  const handlePrevious = () => {    
     const previousIndex = (currentIndex - 1 + srcImgs.length) % srcImgs.length;
     setCurrentIndex(previousIndex);
+    console.log(previousIndex);
   };
 
   const openImg = (e) => {
     setImageSrc(e.target.src);
     setIsHidden(!isHidden);
+    console.log(isHidden);
   };
 
-  const closeImg = (e) => {
-    setIsHidden(isHidden);
+  const closeImg = () => {
+    setIsHidden(!isHidden);
   };
 
   return (
     <>
-      <div className="gy-item" onClick={openImg}>
+      <div className="gy-item">
         <img
           src={src}
-          // className={className}
           className="gy-img"
           alt="digital art by Charly BGood"
+          onClick={openImg}
         />
       </div>
       <div

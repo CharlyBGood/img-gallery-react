@@ -10,7 +10,6 @@ function VisualArt() {
     <div className="main-gy-container">
       <h1 className="collage-h1">VisualArts_Gallery</h1>
       <div className="gy-container">
-        {/* <Image src={srcImgs[currentIndex]} className="current" /> */}
         {imgLength.map((img) => {
           return <Image src={img} />;
         })}
