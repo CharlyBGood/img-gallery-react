@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+:root {
+  color-scheme: light only;
+  --fs-600: 2rem;
+  --fs-500: 1.1rem;
+  --fs-400: 1rem;
+  --col-whr: #e2e1e1;
+  --col-whp: #b895ae;
+  --col-rd: #090314;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  /* background: hsl(211 82% 11% / 1); */
+  background: hsla(279, 70%, 4%, 0.81);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--col-rd);
+  border-radius: 100vw;
+  /* border: .25em solid hsl(211 82% 11% / 1); */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(281, 19%, 38%);
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: hsla(220 67% 4% 0.81 / 1) hsla(194, 66%, 44%, 0.782);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #0c0c0c;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: var(--col-whr);
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  font-weight: bolder;
+  user-select: none;
+  scroll-behavior: smooth;
 }

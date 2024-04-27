@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 :root {
   color-scheme: light only;
@@ -7,11 +7,10 @@
   --fs-400: 1rem;
   --col-whr: #e2e1e1;
   --col-whp: #b895ae;
-  /* --col-rd: #99103d; */
   --col-rd: #090314;
-}
+} */
 
-* {
+/* * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -25,11 +24,10 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  /* height: 100vh; */
   font-weight: bolder;
-}
+} */
 
-.App {
+/* .App {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,4 +42,28 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+} */
+
+.App {
+  background-color: rgba(22, 2, 15, 0.74);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
 }
