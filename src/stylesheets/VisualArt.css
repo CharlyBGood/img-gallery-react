@@ -67,20 +67,13 @@
 .img-modal-open {
   display: flex;
   position: fixed;
-  z-index: 11;
+  /* z-index: 11; */
   left: 0;
   top: 0;
   height: 100%;
   overflow: auto;
-  background-color: var(--col-rd);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
+  background-color: var(--col-rd);  
+  width: 100%;  
   align-items: center;
   justify-content: center;
 }
