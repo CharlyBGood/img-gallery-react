@@ -2,7 +2,7 @@ import "../stylesheets/VisualArt.css";
 import { useState } from "react";
 import { srcImgs } from "../db/imgDb";
 
-export function Image({ src, className }) {
+export function Image({ src }) {
   const [imageSrc, setImageSrc] = useState(null);
   const [isHidden, setIsHidden] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -47,13 +47,13 @@
   color: var(--col-whr);
   border: none;
   padding: 10px;
-  font-size: 4em;
+  font-size: 3.5em;
   z-index: 1;
 }
 
 .prev:hover,
 .next:hover {
-  color: rgba(206, 193, 193, 0.8);
+  color: var(--col-whp);
 }
 
 .svg-inline--fa {
@@ -72,7 +72,7 @@
   top: 0;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--col-rd);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
