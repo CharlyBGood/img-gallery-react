@@ -27,7 +27,7 @@ export function Modal({
         }}
         aria-label="Previous image"
       >
-        &#10094;
+        &#8678;
       </button>
       <button
         className="next"
@@ -37,7 +37,7 @@ export function Modal({
         }}
         aria-label="Next image"
       >
-        &#10095;
+        &#8680;
       </button>
     </div>
   );
