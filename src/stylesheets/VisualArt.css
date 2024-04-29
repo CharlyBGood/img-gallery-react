@@ -40,9 +40,9 @@
 }
 .prev,
 .next {
-  position: initial;
   cursor: pointer;
-  top: 57%;
+  position: absolute;
+  bottom: 11%;
   background-color: transparent;
   color: var(--col-whr);
   border: none;
@@ -56,8 +56,12 @@
   color: var(--col-whp);
 }
 
-.svg-inline--fa {
-  margin: 0 0.5em;
+.prev {
+  left: 15%;
+}
+
+.next {
+  right: 15%;
 }
 
 .img-modal {
@@ -67,7 +71,7 @@
 .img-modal-open {
   display: flex;
   position: fixed;
-  /* z-index: 11; */
+  z-index: 11;
   left: 0;
   top: 0;
   height: 100%;
