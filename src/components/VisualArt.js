@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { Image } from "./Image";
+import { Modal } from "./Modal";
 import { srcImgs } from "../db/imgDb";
 import "../stylesheets/VisualArt.css";
 import { useState } from "react";
@@ -10,11 +11,11 @@ function VisualArt() {
 
   const openImg = (e) => {
     setImageSrc(e.target.src);
-    setIsModalHidden(!isModalHidden);
+    setIsModalHidden(false);
   };
 
   const closeImg = () => {
-    setIsModalHidden(!isModalHidden);
+    setIsModalHidden(true);
   };
   return (
     <div className="main-gy-container">
@@ -24,30 +25,7 @@ function VisualArt() {
           return <Image key={index} src={img} openImg={openImg} />;
         })}
       </div>
-      <div
-        className={isModalHidden ? "img-modal" : "img-modal-open"}
-        onClick={closeImg}
-      >
-        <button
-          className="prev"
-          // onClick={handlePrevious}
-          aria-label="Previous image"
-        >
-          &#10094;
-        </button>
-        <img
-          className="modal-content"
-          src={imageSrc}
-          alt="digital art by Charly BGood"
-        />
-        <button
-          className="next"
-          // onClick={handleNext}
-          aria-label="Next image"
-        >
-          &#10095;
-        </button>
-      </div>
+      <Modal isHidden={isModalHidden} imageSrc={imageSrc} closeImg={closeImg} />
     </div>
   );
 }
