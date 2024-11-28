@@ -8,7 +8,7 @@ function Footer() {
           React
         </a>
         Image gallery example + art by
-        <a href="https://charlybgood.art" target="_blank" rel="noreferrer">
+        <a href="https://charlybgood.com" target="_blank" rel="noreferrer">
           charly_bgood
         </a>
       </p>
