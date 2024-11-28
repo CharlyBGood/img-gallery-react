@@ -5,9 +5,10 @@
   --fs-600: 2rem;
   --fs-500: 1.1rem;
   --fs-400: 1rem;
-  --col-whr: #e2e1e1;
-  --col-whp: #b895ae;
-  --col-rd: #090314;
+  --col-rd: #e2e1e1;
+  --col-whp: #d1cacf;
+  --col-whr: #090314;
+  --col-wr: #1b0f31;
 }
 
 ::-webkit-scrollbar {

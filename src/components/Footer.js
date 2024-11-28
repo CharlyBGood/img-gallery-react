@@ -7,7 +7,7 @@ function Footer() {
         <a href="https://react.dev/" rel="noreferrer" target="_blank">
           React
         </a>
-        Image gallery example + art by
+        Image gallery example by
         <a href="https://charlybgood.com" target="_blank" rel="noreferrer">
           charly_bgood
         </a>

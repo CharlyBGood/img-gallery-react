@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 export function Modal({
   isHidden,
@@ -52,11 +53,6 @@ export function Modal({
       className={isHidden ? "img-modal" : "img-modal-open"}
       onClick={closeImg}
     >
-      <img
-        className="modal-content"
-        src={imageSrc}
-        alt="digital art by Charly BGood"
-      />
       <button
         className="prev"
         onClick={(e) => {
@@ -65,8 +61,15 @@ export function Modal({
         }}
         aria-label="Previous image"
       >
-        &#8678;
+        <AiOutlineLeft />
       </button>
+      <div className="img-container">
+        <img
+          className="modal-content"
+          src={imageSrc}
+          alt="digital art by Charly BGood"
+        />
+      </div>
       <button
         className="next"
         onClick={(e) => {
@@ -75,7 +78,7 @@ export function Modal({
         }}
         aria-label="Next image"
       >
-        &#8680;
+        <AiOutlineRight />
       </button>
     </div>
   );

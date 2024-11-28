@@ -7,22 +7,30 @@
   padding-bottom: 2em;
 }
 
-.collage-h1 {
+.gallery-title {
   font-size: 1.5em;
   text-align: center;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
+  padding: 0.8em 0;
+  z-index: 11;
 }
 
 .gy-container {
   display: flex;
   flex-wrap: wrap;
   width: 85%;
-  padding: 2.5em;
+  padding: 1.5em;
   justify-content: center;
   gap: 1em;
+  margin-bottom: 1em;
 }
 
 .gy-item {
   width: 14rem;
+  /* border: 4px solid #0c0c0c; */
   border-radius: 0.4em;
   cursor: pointer;
 }
@@ -38,30 +46,42 @@
   border-radius: 0.4em;
   height: 100%;
 }
+
+.img-container {
+  flex: 2;
+}
+
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  bottom: 11%;
   background-color: transparent;
-  color: var(--col-whr);
+  color: var(--col-whp);
   border: none;
-  padding: 10px;
   font-size: 2.5em;
-  z-index: 1;
+  flex: 1;
+  outline: none;
 }
 
 .prev:hover,
 .next:hover {
-  color: var(--col-whp);
+  color: var(--col-rd);
+  transition: 1s;
+}
+
+svg:hover {
+  filter: drop-shadow(0 0 2em var(--col-whr));
 }
 
 .prev {
-  left: 24%;
+  right: 94%;
 }
 
 .next {
-  right: 24%;
+  left: 94%;
+}
+
+.svg-inline--fa {
+  margin: 0 0.5em;
 }
 
 .img-modal {
@@ -76,20 +96,25 @@
   top: 0;
   height: 100%;
   overflow: auto;
-  background-color: var(--col-rd);  
-  width: 100%;  
+  background-color: #080108f5;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  touch-action: none;
 }
 
 img.modal-content {
   max-width: 100%;
   max-height: 100%;
   border-radius: 0.3em;
-  background-color: var(--blckBgr);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  object-fit: scale-down;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .main-gy-container {
     padding-bottom: 3em;
   }
@@ -99,5 +124,27 @@ img.modal-content {
 
   .gy-item {
     width: 41%;
+  }
+
+  .header-logo {
+    margin-left: 0.5em;
+  }
+
+  .nav-link_2 {
+    padding: 0.5em;
+  }
+
+  .prev,
+  .next {
+    bottom: 0%;
+    font-size: 2em;
+  }
+
+  .prev {
+    right: 80%;
+  }
+
+  .next {
+    left: 80%;
   }
 }

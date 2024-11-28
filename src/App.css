@@ -1,5 +1,5 @@
 .App {
-  background-color: rgba(22, 2, 15, 0.74);
+  background-color: var(--col-whp);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
