@@ -1,1 +1,1 @@
-Image gallery created on React by charly_bgood_x.
+Image gallery created with React by charly_bgood_x.

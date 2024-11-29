@@ -72,13 +72,13 @@ svg:hover {
   filter: drop-shadow(0 0 2em var(--col-whr));
 }
 
-.prev {
+/* .prev {
   right: 94%;
 }
 
 .next {
   left: 94%;
-}
+} */
 
 .svg-inline--fa {
   margin: 0 0.5em;

@@ -7,7 +7,7 @@ export function Navbar() {
       <img className="header-logo" src={Logo} alt="logo" />
       <a
         className="nav-link_2"
-        href="https://github.com/CharlyBGood"
+        href="https://github.com/CharlyBGood/img-gallery-react"
         rel="noreferrer"
         target="_blank"
       >
