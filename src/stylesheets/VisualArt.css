@@ -36,7 +36,7 @@
 }
 
 .gy-item:hover {
-  filter: drop-shadow(0 0 2em var(--col-whr));
+  filter: drop-shadow(0 0 2em var(--col-whp));
 }
 
 .gy-img {
@@ -67,18 +67,6 @@
   color: var(--col-rd);
   transition: 1s;
 }
-
-svg:hover {
-  filter: drop-shadow(0 0 2em var(--col-whr));
-}
-
-/* .prev {
-  right: 94%;
-}
-
-.next {
-  left: 94%;
-} */
 
 .svg-inline--fa {
   margin: 0 0.5em;
@@ -134,17 +122,12 @@ img.modal-content {
     padding: 0.5em;
   }
 
+  .img-container {
+    flex: 11;
+  }
+
   .prev,
   .next {
-    bottom: 0%;
     font-size: 2em;
-  }
-
-  .prev {
-    right: 80%;
-  }
-
-  .next {
-    left: 80%;
   }
 }
